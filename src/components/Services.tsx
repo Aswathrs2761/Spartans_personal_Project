@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Music, Camera, Palette, UtensilsCrossed, Disc3,Video, Images,  } from "lucide-react";
 import chendaImg from "../components/images/chenda.jpeg";
 import djMusic from "../components/images/djMusic.png";
-import Photography from "../components/images/Photography.png";
+import photography from "../components/images/Photography.png";
 import baloon from "../components/images/baloon_decoration.png";
 import catering from "../components/images/catering_service.png";
 import selfieBooth from "../components/images/360_selfieBooth.png";
@@ -12,7 +12,7 @@ const services = [
 
   { icon: Disc3, title: "DJ Music", Images: djMusic,   desc: "Keep your guests entertained with professional DJ services. Perfect soundtrack for weddings, corporate parties, birthdays, and more." },
 
-  { icon: Camera, title: "Photography", Images: Photography, desc: "Capture every precious moment with expert photography. From candid shots to stunning portraits, memories that last a lifetime." },
+  { icon: Camera, title: "Photography", Images: photography, desc: "Capture every precious moment with expert photography. From candid shots to stunning portraits, memories that last a lifetime." },
 
   { icon: Palette, title: "Stage & Balloon Decoration", Images:baloon, desc: "Stunning backdrops and decor for all types of events, ensuring a visually appealing ambiance." },
 
