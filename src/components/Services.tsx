@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Music, Camera, Palette, UtensilsCrossed, Disc3,Video, Images,  } from "lucide-react";
 import chendaImg from "../components/images/chenda.jpeg";
 import djMusic from "../components/images/djMusic.png";
-import photography from "../components/images/Photography.png";
+import photography from "../components/images/photography.png";
 import baloon from "../components/images/baloon_decoration.png";
 import catering from "../components/images/catering_service.png";
 import selfieBooth from "../components/images/360_selfieBooth.png";
