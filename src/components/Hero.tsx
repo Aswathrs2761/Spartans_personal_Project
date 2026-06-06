@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "./images/Logo_gold.png";
 
 const Hero = () => {
   return (
@@ -35,21 +36,38 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider mb-4 text-gold-gradient leading-tight">
+          {/* <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider mb-4 text-gold-gradient leading-tight">
             SPARTANS
             <br />
             <span className="text-foreground">EVENT MANAGEMENT</span>
-          </h1>
+          </h1> */}
+          <div className="flex items-center justify-center mt-10 -mb-4 px-4">
+            <img
+              src={logo}
+              alt="spartans event management"
+              className="
+      w-full
+      max-w-sm
+      sm:max-w-lg
+      md:max-w-2xl
+      lg:max-w-4xl
+      xl:max-w-5xl
+      h-auto
+      object-contain
+    "
+            />
+          </div>
+
         </motion.div>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="font-heading text-lg md:text-2xl text-primary tracking-wide mb-4"
         >
           Chennai's Premier A-Z Event Organizers
-        </motion.p>
+        </motion.p> */}
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

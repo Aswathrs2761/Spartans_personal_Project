@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "./images/Logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -32,23 +31,24 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <div className="container mx-auto relative flex items-center justify-between py-4 px-4 md:px-8">
         
-        {/* Logo + Brand */}
-        <a href="#home" className="flex items-center">
-          <img
-            src={logo}
-            alt="Spartans Event Management"
-            className="h-24 w-48"
-          />
-
+        {/* Brand */}
+        <a
+          href="#home"
+          className="
+            absolute left-1/2 -translate-x-1/2
+            md:static md:translate-x-0
+            flex items-center
+          "
+        >
           <span className="font-heading text-2xl md:text-3xl font-bold tracking-widest text-gold-gradient">
             SPARTANS
           </span>
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 text-gold-gradient ">
+        <div className="hidden md:flex items-center gap-8 ml-auto">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden ml-auto text-foreground"
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
         >
